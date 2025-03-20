@@ -19,7 +19,7 @@ TARGET_DISABLE_EPPE := true
 
 # Maintainer
 ALPHA_BUILD_TYPE := Unofficial
-ALPHA_MAINTAINER := B 317 KZ
+ALPHA_MAINTAINER := B317KZ
  
 # Device config
 TARGET_HAS_UDFPS := false
