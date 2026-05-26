@@ -12,12 +12,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Specific Flags
-SURFACE_FLINGER_BOOST := true
-TARGET_SUPPORTS_QUICK_TAP := true
+AXION_CAMERA_REAR_INFO := 16,5
+AXION_CAMERA_FRONT_INFO := 16
+AXION_MAINTAINER := EunjiX
+AXION_PROCESSOR := Snapdragon_636
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_GOOGLE_TELEPHONY := false
-WITH_BCR := false
-WITH_GMS := false
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_AXFX := false
+WITH_GMS := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
